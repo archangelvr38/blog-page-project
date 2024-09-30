@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style/contact.css">
+
+    <script src="https://kit.fontawesome.com/1431c19e8d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="layout">
+        <div class="sidebar">
+            <ul class="nav-links">
+                <li><a href="mainPage.html">Home</a></li>
+                <li><a href="postPage.html">Blog</a></li>
+                <li><a href="contactPage.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <h1>Contact Me</h1>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <input type="submit" value="Send Message">
+            </form>
+
+            <div class="subscription-box">
+                <h2>Subscribe to our Newsletter</h2>
+                <form action="subscribe.php" method="post">
+                    <label for="subscribe-email">Email:</label>
+                    <input type="email" id="subscribe-email" name="subscribe-email" required>
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+            <div>
+                <footer>
+                    <ul class="socials">
+                        <li>
+                            <a href="https://www.facebook.com">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com">
+                                <i class="fa-brands fa-square-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.twitter.com">
+                                <i class="fa-brands fa-square-x-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
+</body>
+
+</html>
